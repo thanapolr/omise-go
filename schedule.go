@@ -11,10 +11,10 @@ type Schedule struct {
 	Period          schedule.Period          `json:"period"`
 	On              schedule.On              `json:"on"`
 	InWords         string                   `json:"in_words"`
-	StartDate       Date                     `json:"start_date"`
-	EndDate         Date                     `json:"end_date"`
+	StartDate       Date                     `json:"start_on"`
+	EndDate         Date                     `json:"end_on"`
 	Charge          *schedule.ChargeDetail   `json:"charge"`
 	Transfer        *schedule.TransferDetail `json:"transfer"`
 	Occurrences     OccurrenceList           `json:"occurrences"`
-	NextOccurrences []Date                   `json:"next_occurrences"`
+	NextOccurrences []Date                   `json:"next_occurrences_on"`
 }
