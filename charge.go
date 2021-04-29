@@ -25,6 +25,7 @@ type Charge struct {
 	CustomerID string   `json:"customer"`
 	IP         *string  `json:"ip"`
 	Dispute    *Dispute `json:"dispute"`
+	ScheduleID *string  `json:"schedule"`
 
 	ReturnURI    string `json:"return_uri"`
 	AuthorizeURI string `json:"authorize_uri"`
